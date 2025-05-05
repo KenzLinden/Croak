@@ -1,0 +1,4 @@
+procs:
+    react + electron:
+        autostart: false
+        shell: "cd frontend && npm run dev"
