@@ -141,8 +141,8 @@ Ensure you have the latest version of npm
     git clone https://github.com/KenzLinden/Croak.git
     ```
 
-! IF YOU ARE AN INVITED COLLABORATOR OF THE PROJECT, SKIP THIS STEP (but please still make MRs) !
-2. Change git remote url to avoid accidental pushes to base project
+
+2. Change git remote url to avoid accidental pushes to base project (! IF YOU ARE AN INVITED COLLABORATOR OF THE PROJECT, SKIP THIS STEP (but please still make MRs) !)
     ```sh
     git remote set-url origin your-username/Croak
     git remote -v # confirm the changes
