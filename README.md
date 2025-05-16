@@ -142,7 +142,7 @@ Ensure you have the latest version of npm
     ```
 
 
-2. Change git remote url to avoid accidental pushes to base project (! IF YOU ARE AN INVITED COLLABORATOR OF THE PROJECT, SKIP THIS STEP (but please still make MRs) !)
+2. Change git remote url to avoid accidental pushes to base project (IF YOU ARE AN INVITED COLLABORATOR OF THE PROJECT, SKIP THIS STEP BUT ENSURE TO STILL MAKE MERGE REQUESTS)
     ```sh
     git remote set-url origin your-username/Croak
     git remote -v # confirm the changes
