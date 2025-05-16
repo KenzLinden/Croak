@@ -164,6 +164,9 @@ Ensure you have the latest version of npm
 
 # WIP (STILL WRITING READ ME)
 
+BACKEND WILL BE DJANGO
+FRONTEND IS REACT ELECTRON
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
