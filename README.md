@@ -115,8 +115,8 @@ All we want is a simple voice and message chat application that we can host for 
 
 ### Built With
 
--   [![React][React.js]][React-url]
--   [![Electron]][Electron-url]
+- [![React][React.js]][React-url]
+- [![Electron]][Electron-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,32 +131,32 @@ To get a local copy up and running follow these simple example steps.
 
 Ensure you have the latest version of npm
 
--   npm
--   python 3.10.6
+- npm
+- python 3.10.6
 
 ### Installation
 
 1. Clone the repo
-    ```sh
-    git clone https://github.com/KenzLinden/Croak.git
-    ```
 
+   ```sh
+   git clone https://github.com/KenzLinden/Croak.git
+   ```
 
 2. Change git remote url to avoid accidental pushes to base project (IF YOU ARE AN INVITED COLLABORATOR OF THE PROJECT, SKIP THIS STEP BUT ENSURE TO STILL MAKE MERGE REQUESTS)
-    ```sh
-    git remote set-url origin your-username/Croak
-    git remote -v # confirm the changes
-    ```
+   ```sh
+   git remote set-url origin your-username/Croak
+   git remote -v # confirm the changes
+   ```
 3. Install python packages
-    ```sh
-     pip install -r requirements.txt
-    ```
+   ```sh
+    pip install -r requirements.txt
+   ```
 4. Install NPM packages
-    ```sh
-    cd frontend
-    npm install
-    ```
-    (It is recommended that you [use a venv](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/) when it comes to managing installed packages, however it is not a requirement)
+   ```sh
+   cd frontend
+   npm install
+   ```
+   (It is recommended that you [use a venv](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/) when it comes to managing installed packages, however it is not a requirement)
 
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,6 +166,7 @@ Ensure you have the latest version of npm
 
 BACKEND WILL BE DJANGO
 FRONTEND IS REACT ELECTRON
+Make sure docker & docker compose is install to setup dev database
 
 ## Usage
 
@@ -179,10 +180,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
--   [ ] Feature 1
--   [ ] Feature 2
--   [ ] Feature 3
-    -   [ ] Nested Feature
+- [ ] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+  - [ ] Nested Feature
 
 See the [open issues](https://github.com/KenzLinden/Croak/issues) for a full list of proposed features (and known issues).
 
