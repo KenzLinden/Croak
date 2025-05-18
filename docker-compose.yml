@@ -1,12 +1,31 @@
 services:
-  croak-postgres:
-    image: postgres:16
-    container_name: croak-postgres
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: croak-dev
-    ports:
-      - "5432:5432"
-    volumes:
-      - ~/apps/postgres:/var/lib/postgresql/data
+    croak-postgres:
+        image: postgres:16
+        container_name: croak-postgres
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: croak-dev
+        ports:
+            - "5432:5432"
+        volumes:
+            - ~/apps/postgres:/var/lib/postgresql/data
+
+    croak-backend:
+        build:
+            context: ./backend
+        container_name: croak-backend
+        depends_on:
+            - croak-postgres
+        environment:
+            DB_NAME: croak-dev
+            DB_USER: postgres
+            DB_PASS: password
+            DB_HOST: localhost
+            DB_PORT: 5432
+        volumes:
+            - ./backend:/app
+        working_dir: /app
+        command: python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+        watch:
+            - ./backend
