@@ -1,7 +1,0 @@
-procs:
-    react + electron:
-        autostart: false
-        shell: "cd frontend && npm run dev"
-    fastapi:
-        autostart: true
-        shell: "cd backend && fastapi dev main.py"

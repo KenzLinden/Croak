@@ -6,3 +6,8 @@ __pycache__
 # mprocs
 mprocs.yaml
 mprocs.log
+
+
+# poetry - not all users will be required to have it
+pyproject.toml
+poetry.lock
